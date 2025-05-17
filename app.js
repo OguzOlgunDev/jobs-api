@@ -25,9 +25,9 @@ const notFoutnMiddleware = require("./middlewares/not-found");
 
 app.use(express.json());
 
-app.use(helmet);
-app.use(cors);
-app.use(xss);
+app.use(helmet());
+app.use(cors();
+app.use(xss();
 app.use(
   rateLimit({
     windowMs: 1000 * 60 * 10,
